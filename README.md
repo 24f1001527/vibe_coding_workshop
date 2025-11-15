@@ -42,19 +42,7 @@ A gamified productivity web app built with React, Vite, and Tailwind CSS.
 
 ## Deploying to GitHub Pages
 
-1. **Set the correct `base` path in `vite.config.js`:**
-
-   Open `vite.config.js` and change the `base` property to match your repository name:
-
-   ```javascript
-   export default {
-     // ...
-     base: '/your-repository-name/',
-     // ...
-   };
-   ```
-
-2. **Build the project:**
+1. **Build the project:**
 
    ```bash
    npm run build
@@ -62,16 +50,29 @@ A gamified productivity web app built with React, Vite, and Tailwind CSS.
 
    This will create a `dist` directory with the production-ready files.
 
-3. **Push the `dist` directory to a `gh-pages` branch:**
+2. **Deploy to GitHub Pages:**
 
-   You can use the `gh-pages` package to automate this process:
+   The easiest way to deploy your site is to use the `gh-pages` package.
 
+   First, install the package as a dev dependency:
    ```bash
-   npm install -g gh-pages
-   gh-pages -d dist
+   npm install gh-pages --save-dev
    ```
 
-4. **Configure GitHub Pages:**
+   Then, add a `deploy` script to your `package.json`:
+   ```json
+   "scripts": {
+     // ...
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+   Now, you can deploy your site by running:
+    ```bash
+    npm run deploy
+    ```
+   This will push the contents of the `dist` directory to a new `gh-pages` branch on your repository.
+
+3. **Configure GitHub Pages:**
 
    - Go to your repository's settings on GitHub.
    - In the "Pages" section, select the `gh-pages` branch as the source.
