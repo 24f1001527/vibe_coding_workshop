@@ -22,8 +22,8 @@ A gamified productivity web app built with React, Vite, and Tailwind CSS.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/<your-username>/vibe-productivity.git
-   cd vibe-productivity
+   git clone https://github.com/24f1001527/vibe_coding_workshop.git
+   cd vibe_coding_workshop
    ```
 
 2. **Install dependencies:**
@@ -78,4 +78,4 @@ A gamified productivity web app built with React, Vite, and Tailwind CSS.
    - In the "Pages" section, select the `gh-pages` branch as the source.
    - Save the changes.
 
-Your application will be deployed to `https://<your-username>.github.io/<your-repository-name>/`.
+Your application will be deployed to `https://24f1001527.github.io/vibe_coding_workshop/`.
