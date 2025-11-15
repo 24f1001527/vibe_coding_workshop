@@ -1,4 +1,5 @@
 import React from 'react';
+import GamificationManager from './components/GamificationManager';
 
 function App() {
   return (
@@ -10,7 +11,6 @@ function App() {
           </h1>
           <p className="text-lg text-gray-400 mt-2">Level up your life, one task at a time.</p>
         </header>
-import GamificationManager from './components/GamificationManager';
 
         <main>
           <GamificationManager />
